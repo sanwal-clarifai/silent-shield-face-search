@@ -1,2 +1,13 @@
-clarifai==9.8.1
-streamlit==1.24.0
+Pillow==10.1.0
+altair==5.1.2
+# clarifai==9.9.3
+clarifai-grpc==9.10.0
+clarifai-utils==0.1.20
+numpy
+pandas
+requests==2.31.0
+stqdm==0.0.5
+streamlit==1.28.1
+vega-datasets==0.9.0
+matplotlib
+plotly
