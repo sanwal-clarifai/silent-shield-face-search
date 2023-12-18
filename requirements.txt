@@ -1,6 +1,6 @@
 Pillow==10.1.0
 altair==5.1.2
-clarifai
+clarifai==9.8.1
 clarifai-grpc==9.10.0
 clarifai-utils==0.1.20
 numpy
