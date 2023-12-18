@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
                     matches = vis_search_req.hits[i]
                     score = vis_search_req.hits[i].score
-                    
+
                     metadata = vis_search_req.hits[i].input.data.metadata
 
                     if 'img_name' in metadata.keys():
@@ -221,9 +221,10 @@ if __name__ == '__main__':
                     elif 'filename' in metadata.keys():
                         name = metadata['filename']
                     else:
-                        name =  metadata
-                    df = df.append({'url': img_url,'input_type':input_type, 'frame time': frame_time_string,
-                                     'score': score, 'metadata': name}, ignore_index=True)
+                        name = metadata
+
+                    df.loc[len(df)] = {'url': img_url, 'input_type': input_type, 'frame time': frame_time_string,
+                                       'score': score, 'metadata': name}
                     urls.append(img_url)
                     scores.append(score)
                 filtered_df = df[df['score'] > slider_value]
