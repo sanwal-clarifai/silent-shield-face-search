@@ -7,6 +7,8 @@ This is a template repository to make it easy to get started creating a UI modul
 
 ## To use this repo
 
+## Make sure to have a Face-detect-crop workflow in your app. 
+
 1. Click the "Use this template" green button on github to make a repo from this repo template and give it a name of the format module-{XYZ} filling in the XYZ portion.
 2. Clone the new repo as normal to your development environment.
 3. `pip install -r requirements.txt` to make sure you have all the Python packages installed. Add any new packages to this requirements.txt file that you add during development.
